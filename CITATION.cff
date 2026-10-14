@@ -1,7 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the article and this software archive."
-title: "Analysis code: Optimized Cardiorespiratory State at Tone Onset Enhances Sensory Responses but Not Associative Learning in Healthy Adults"
+message: "If you use this code, please cite the article and this software."
+title: "Analysis code for: Optimized Cardiorespiratory State at Tone Onset Enhances Sensory Responses but Not Associative Learning in Healthy Adults"
+type: software
 version: 1.0.0
+doi: 10.5281/zenodo.23363484
 date-released: 2026-10-14
 license: MIT
 repository-code: "https://github.com/praajhen/optimized-tebc"
@@ -11,21 +13,22 @@ authors:
     orcid: "https://orcid.org/0000-0003-4244-485X"
     affiliation: University of Jyväskylä
 keywords:
-  - trace eyeblink conditioning
+  - EEG
+  - ERP
   - cardiac cycle
   - respiration
-  - EEG
-  - event-related potentials
+  - trace eyeblink conditioning
+  - ageing
+  - FieldTrip
   - MATLAB
-preferred-citation:
-  type: article
-  title: "Optimized Cardiorespiratory State at Tone Onset Enhances Sensory Responses but Not Associative Learning in Healthy Adults"
-  authors:
-    - family-names: Santhana Gopalan
-      given-names: Praghajieeth Raajhen
-      orcid: "https://orcid.org/0000-0003-4244-485X"
-    - family-names: Nokia
-      given-names: Miriam S.
-  journal: European Journal of Neuroscience
-  doi: "10.1111/ejn.70722"
-  year: 2026
+references:
+  - type: article
+    title: "Optimized Cardiorespiratory State at Tone Onset Enhances Sensory Responses but Not Associative Learning in Healthy Adults"
+    authors:
+      - family-names: Santhana Gopalan
+        given-names: Praghajieeth Raajhen
+      - family-names: Nokia
+        given-names: Miriam S.
+    journal: European Journal of Neuroscience
+    doi: "10.1111/ejn.70722"
+    year: 2026

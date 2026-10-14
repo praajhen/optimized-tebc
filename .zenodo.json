@@ -1,5 +1,5 @@
 {
-  "title": "Analysis code: Optimized Cardiorespiratory State at Tone Onset Enhances Sensory Responses but Not Associative Learning in Healthy Adults",
+  "title": "Analysis code for: Optimized Cardiorespiratory State at Tone Onset Enhances Sensory Responses but Not Associative Learning in Healthy Adults",
   "upload_type": "software",
   "description": "MATLAB analysis code (EEG, ECG, respiration and EMG) for Santhana Gopalan & Nokia, European Journal of Neuroscience (2026). Covers preprocessing, identification of each participant's optimal cardiorespiratory state from the composite N1–P2 response, CS-evoked ERPs and time–frequency analysis during trace eyeblink conditioning, and conditioned-response scoring. Participant data are not included.",
   "creators": [
@@ -10,7 +10,7 @@
     }
   ],
   "license": "MIT",
-  "keywords": ["trace eyeblink conditioning", "cardiac cycle", "respiration", "EEG", "event-related potentials", "MATLAB", "FieldTrip"],
+  "keywords": ["EEG", "ERP", "cardiac cycle", "respiration", "trace eyeblink conditioning", "ageing", "FieldTrip", "MATLAB"],
   "related_identifiers": [
     {
       "identifier": "10.1111/ejn.70722",
