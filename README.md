@@ -1,4 +1,4 @@
-# Optimized cardiorespiratory state and trace eyeblink conditioning (TEBC): analysis code
+# Optimized cardiorespiratory state at tone onset enhances sensory responses but not associative learning in healthy adults: analysis code
 
 MATLAB/FieldTrip code for:
 
