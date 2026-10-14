@@ -1,5 +1,5 @@
 # Personalised cardiorespiratory timing in trace eyeblink conditioning
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23363484.svg)](https://doi.org/10.5281/zenodo.23363484)
 MATLAB analysis code for:
 
 > Santhana Gopalan, P. R., & Nokia, M. S. (2026). Optimized Cardiorespiratory State at Tone Onset Enhances Sensory Responses but Not Associative Learning in Healthy Adults. *European Journal of Neuroscience*. https://doi.org/10.1111/ejn.70722
@@ -103,7 +103,7 @@ Files were renamed to valid MATLAB script names. Mapping from the original names
 
 ## Citation
 
-If you use this code, please cite the article above and this software archive (see `CITATION.cff`; DOI on Zenodo).
+If you use this code, please cite the article above and this software archive (see `CITATION.cff`; https://doi.org/10.5281/zenodo.23363484).
 
 ## Licence
 
