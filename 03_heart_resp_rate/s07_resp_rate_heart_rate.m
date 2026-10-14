@@ -1,10 +1,10 @@
 clear; clc;
 
-addpath('C:\MyTemp\fieldtrip-20230427');
+addpath('C:\toolboxes\fieldtrip-20230427');
 ft_defaults;
 
 
-data_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\data\auditory\';  % Folder containing your datasets
+data_folder = 'C:\TEBC_project\data\auditory\';  % Folder containing your datasets
 dataset_files = dir(fullfile(data_folder, '*.edf'));  % List all .edf files in the folder
 
 for file_idx = 1:60

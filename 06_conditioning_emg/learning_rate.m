@@ -2,7 +2,7 @@
 % Learning rate = conditioning trial number at which 5th CR occurred
 % Conditioning trials = 6–55 (50 trials)
 
-cd('C:\MyTemp\Personalised TEBC (2024-2025)\CR');
+cd('C:\TEBC_project\CR');
 
 CSUS_trials = 6:55;
 minCR = 5;

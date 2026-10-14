@@ -4,7 +4,7 @@
 
 clear; clc; close all
 
-erp_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ERP';
+erp_folder = 'C:\TEBC_project\intermediate_files\ERP';
 files = dir(fullfile(erp_folder,'PL*_TEBC.mat'));
 
 channels = [6 7 106];

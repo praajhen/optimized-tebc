@@ -1,7 +1,7 @@
 clear; clc; close all
 
 %% EEGLAB
-addpath('C:\MyTemp\eeglab2025.1.0')
+addpath('C:\toolboxes\eeglab2025.1.0')
 eeglab; close
 
 %% LOAD LAYOUT

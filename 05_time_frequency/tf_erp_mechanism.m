@@ -1,7 +1,7 @@
 clear; clc; close all;
 
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\TF_results\TF_metrics.mat');   % contains TF_metrics
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\TEBC_compositie value.mat');        % contains variable a (60x1)
+load('C:\TEBC_project\intermediate_files\TF_results\TF_metrics.mat');   % contains TF_metrics
+load('C:\TEBC_project\intermediate_files\TEBC_compositie value.mat');        % contains variable a (60x1)
 
 ERP = a(:);
 
@@ -44,8 +44,8 @@ clear; clc; close all;
 %% ========================================================================
 % LOAD DATA
 %% ========================================================================
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\TF_results\TF_metrics.mat');   % contains TF_metrics
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\TEBC_compositie value.mat');        % contains variable a (60x1)
+load('C:\TEBC_project\intermediate_files\TF_results\TF_metrics.mat');   % contains TF_metrics
+load('C:\TEBC_project\intermediate_files\TEBC_compositie value.mat');        % contains variable a (60x1)
 
 TF_metrics.N1P2 = a(:);
 

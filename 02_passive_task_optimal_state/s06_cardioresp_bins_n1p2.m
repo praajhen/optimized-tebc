@@ -1,7 +1,7 @@
 clear; clc;
 close all;
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code')
-addpath('C:\MyTemp\fieldtrip-20230427');
+addpath('C:\TEBC_project\matlab_code')
+addpath('C:\toolboxes\fieldtrip-20230427');
 ft_defaults;
 
 
@@ -11,7 +11,7 @@ ins_dia = {{}};
 exp_sys = {{}};
 exp_dia = {{}};
 
-folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\resp';  % Folder containing your datasets
+folder = 'C:\TEBC_project\intermediate_files\trials\resp';  % Folder containing your datasets
 files = dir(fullfile(folder, 'PL*.mat')); 
 
 file_idx = 22;
@@ -21,7 +21,7 @@ filename = fullfile(folder, files(file_idx).name)% segment only correctly respon
 load(filename); %load accepted trials for averaging
 resp_bins = binMatrices;
 
-ecg_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\ecg';  % Folder containing your datasets
+ecg_folder = 'C:\TEBC_project\intermediate_files\trials\ecg';  % Folder containing your datasets
 files = dir(fullfile(ecg_folder, 'PL*.mat'));  % List all .edf files in the folder
 filename = fullfile(ecg_folder, files(file_idx).name)% segment only correctly responds trials
 load(filename); %load accepted trials for averaging
@@ -90,7 +90,7 @@ ins_sys = ins_sys{1, 1}';
 
 
 %%
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\label.mat')
+load('C:\TEBC_project\intermediate_files\label.mat')
 
 bin1.trial = exp_sys;
 bin1.fsample = 1000;

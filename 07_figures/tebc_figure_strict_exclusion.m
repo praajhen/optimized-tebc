@@ -6,9 +6,9 @@ close all;
 clc;
 
 
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\CR_all.mat')
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\CR_tables_strict.mat');
-savepath = 'C:\MyTemp\Personalised TEBC (2024-2025)\figures\CR\';
+load('C:\TEBC_project\CR\CR_all.mat')
+load('C:\TEBC_project\CR\CR_tables_strict.mat');
+savepath = 'C:\TEBC_project\figures\CR\';
 
 %% ================= KEEP ONLY INCLUDED SUBJECTS =================
 

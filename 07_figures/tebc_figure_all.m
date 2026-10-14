@@ -8,11 +8,11 @@ clear; clc;
 % LOAD DATA
 %% ============================================================
 
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\CR_all.mat')
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\CR_table_young.mat')
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\CR_table_older.mat')
+load('C:\TEBC_project\CR\CR_all.mat')
+load('C:\TEBC_project\CR\CR_table_young.mat')
+load('C:\TEBC_project\CR\CR_table_older.mat')
 
-savepath = 'C:\MyTemp\Personalised TEBC (2024-2025)\figures\CR\';
+savepath = 'C:\TEBC_project\figures\CR\';
 
 %% ================= STYLE =================
 

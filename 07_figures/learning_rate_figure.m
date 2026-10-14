@@ -3,7 +3,7 @@
 %% ============================================================
 
 clear; clc;
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\CR_60s.mat') % learners only
+load('C:\TEBC_project\CR\CR_60s.mat') % learners only
 
 
 %% ================= STYLE SETTINGS =================

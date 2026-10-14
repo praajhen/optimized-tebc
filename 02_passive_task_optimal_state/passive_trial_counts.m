@@ -1,10 +1,10 @@
 clear; clc;
 
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code')
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\TEBC_project\matlab_code')
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
-data_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ICA_cleaned\auditory';
+data_folder = 'C:\TEBC_project\intermediate_files\ICA_cleaned\auditory';
 dataset_files = dir(fullfile(data_folder, 'PL*.set'));
 
 num_files = length(dataset_files);

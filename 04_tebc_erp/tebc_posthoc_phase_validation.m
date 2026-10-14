@@ -24,7 +24,7 @@ close all;
 % FIELDTRIP
 % ============================================================
 
-addpath('C:\MyTemp\fieldtrip-20230427');
+addpath('C:\toolboxes\fieldtrip-20230427');
 ft_defaults;
 
 %% ============================================================
@@ -32,10 +32,10 @@ ft_defaults;
 % ============================================================
 
 data_folder = ...
-    'C:\MyTemp\Personalised TEBC (2024-2025)\data\TEBC';
+    'C:\TEBC_project\data\TEBC';
 
 output_folder = ...
-    'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ecg_resp_state_validation';
+    'C:\TEBC_project\intermediate_files\ecg_resp_state_validation';
 
 %% Create output folder
 

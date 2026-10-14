@@ -1,8 +1,8 @@
 clear; clc; close all
 
 %% ================= LOAD DATA =================
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\cr_table_young.mat')
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\cr_table_older.mat')
+load('C:\TEBC_project\CR\cr_table_young.mat')
+load('C:\TEBC_project\CR\cr_table_older.mat')
 
 %% ================= PARAMETERS =================
 CSUS_trials = 6:55;     % conditioning trials

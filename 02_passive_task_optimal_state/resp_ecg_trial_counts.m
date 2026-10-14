@@ -1,7 +1,7 @@
 clear; clc;
 
-resp_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\resp';
-ecg_folder  = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\ecg';
+resp_folder = 'C:\TEBC_project\intermediate_files\trials\resp';
+ecg_folder  = 'C:\TEBC_project\intermediate_files\trials\ecg';
 
 resp_files = dir(fullfile(resp_folder, 'PL*.mat'));
 ecg_files  = dir(fullfile(ecg_folder,  'PL*.mat'));

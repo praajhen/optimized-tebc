@@ -20,7 +20,7 @@ f = figure;
 set(f, 'Color', [1 1 1], 'Position', [500, 200, 600, 600]);
 %%
 cfgtopo = [];
-cfgtopo.layout = 'C:\MyTemp\fieldtrip-20230427\template\electrode\GSN-HydroCel-128.sfp';      % your 128-channel layout
+cfgtopo.layout = 'C:\toolboxes\fieldtrip-20230427\template\electrode\GSN-HydroCel-128.sfp';      % your 128-channel layout
 cfgtopo.figure = 'gcf';
 cfgtopo.zlim = [-5 5];           % adjust based on your ERP amplitude
 cfgtopo.marker = 'off';

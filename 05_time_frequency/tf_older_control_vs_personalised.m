@@ -14,10 +14,10 @@ clear; clc; close all;
 %% ========================================================================
 
 erp_folder = ...
-'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ERP';
+'C:\TEBC_project\intermediate_files\ERP';
 
 tf_folder = ...
-'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\TF_results';
+'C:\TEBC_project\intermediate_files\TF_results';
 
 %% ========================================================================
 % SUBJECTS

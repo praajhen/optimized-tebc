@@ -1,9 +1,9 @@
 clear; clc;
 
-addpath('C:\MyTemp\fieldtrip-20230427');
+addpath('C:\toolboxes\fieldtrip-20230427');
 ft_defaults;
 
-data_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\clean_channels\';  % Folder containing your datasets
+data_folder = 'C:\TEBC_project\intermediate_files\clean_channels\';  % Folder containing your datasets
 dataset_files = dir(fullfile(data_folder, '*.mat'));  % List all .edf files in the folder
 
 %--------------------------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ cfg.blc = 'no';
 ica = ft_componentanalysis(cfg,data_fixed);
 
 % Save ICA results
-ica_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ICA';  % Folder to save ICA results
+ica_folder = 'C:\TEBC_project\intermediate_files\ICA';  % Folder to save ICA results
 [~, base_filename, ~] = fileparts(dataset_files(file_idx).name);
 ica_filename = fullfile(ica_folder, [base_filename '.mat']);
 save(ica_filename, 'ica');
@@ -39,7 +39,7 @@ save(ica_filename, 'ica');
 % Plot ICA topoplots
 cfg          = [];
 cfg.component  = [1:30]; % components to be plotted
-cfg.layout    = 'C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code\GSN-HydroCel-128.sfp';
+cfg.layout    = 'C:\TEBC_project\matlab_code\GSN-HydroCel-128.sfp';
 cfg.comment   = 'no';
 cfg.marker  ='no';
 % cfg.colormap  ='jet';
@@ -51,7 +51,7 @@ cfg          = [];
 cfg.channel  = [1 2 3 ]; % components to be plotted
 %--------------------------------------------------------------------------------------------------
 cfg.viewmode = 'component';
-cfg.layout    = 'C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code\GSN-HydroCel-128.sfp';
+cfg.layout    = 'C:\TEBC_project\matlab_code\GSN-HydroCel-128.sfp';
 ft_databrowser(cfg, ica)
 
 
@@ -70,7 +70,7 @@ data_clean    = ft_rejectcomponent(cfg, ica, data);
 
 
 % Save ICA cleaned data
-ica_cleaned_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ICA_cleaned\';  % Folder to save ICA results
+ica_cleaned_folder = 'C:\TEBC_project\intermediate_files\ICA_cleaned\';  % Folder to save ICA results
 [~, base_filename, ~] = fileparts(dataset_files(file_idx).name);
 ica_cleaned_data_filename = fullfile(ica_cleaned_folder, [base_filename '.mat']);
 save(ica_cleaned_data_filename, 'data_clean','-v7.3');

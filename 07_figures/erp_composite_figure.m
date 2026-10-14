@@ -1,8 +1,8 @@
 %% ================= Figure: Representative subject (PL14_A) =================
 clear; clc; close all;
 
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code');
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\TEBC_project\matlab_code');
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
 fontName = 'Arial';
@@ -12,8 +12,8 @@ lineW = 1.8;
 %% ---------------------- Load subject ----------------------
 subj = 'PL14_A';
 
-resp_file = fullfile('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\resp',[subj '.mat']);
-ecg_file  = fullfile('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\ecg',[subj '.mat']);
+resp_file = fullfile('C:\TEBC_project\intermediate_files\trials\resp',[subj '.mat']);
+ecg_file  = fullfile('C:\TEBC_project\intermediate_files\trials\ecg',[subj '.mat']);
 
 load(resp_file); resp_bins = binMatrices;
 load(ecg_file);  ecg_bins  = binMatrices;
@@ -54,7 +54,7 @@ end
 end
 
 %% ---------------------- ERP ----------------------
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\label.mat');
+load('C:\TEBC_project\intermediate_files\label.mat');
 
 fs=1000;
 time = linspace(-200,1000,1200);

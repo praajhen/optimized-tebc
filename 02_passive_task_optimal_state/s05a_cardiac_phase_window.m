@@ -1,11 +1,11 @@
 clear; clc;
 
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code')
-addpath('C:\MyTemp\fieldtrip-20230427');
+addpath('C:\TEBC_project\matlab_code')
+addpath('C:\toolboxes\fieldtrip-20230427');
 ft_defaults;
 
 
-data_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\data\auditory';  % Folder containing your datasets
+data_folder = 'C:\TEBC_project\data\auditory';  % Folder containing your datasets
 dataset_files = dir(fullfile(data_folder, 'PL*.edf'));  % List all .edf files in the folder
 %--------------------------------------------------------------------------------------------------
 file_idx =2 %enter the file number
@@ -72,7 +72,7 @@ file_idx =2 %enter the file number
    edges(file_idx,:)= [a, b ,c, d];
 
 [~, data_filename, ~] = fileparts(dataset_filename);
-figure_filename = fullfile('C:\MyTemp\Personalised TEBC (2024-2025)\figures\ecg\', [data_filename '.jpg']);
+figure_filename = fullfile('C:\TEBC_project\figures\ecg\', [data_filename '.jpg']);
 
 % Save the figure as JPEG
 findpeaks(mean(ecg_segments),'MinPeakDistance',300)

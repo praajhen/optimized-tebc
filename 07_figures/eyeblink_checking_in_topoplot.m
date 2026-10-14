@@ -2,10 +2,10 @@
 
 clear; clc
 
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
-cd('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ERP');
+cd('C:\TEBC_project\intermediate_files\ERP');
 
 %% ===================== LOAD ALL YOUNG PERSONALISED =====================
 

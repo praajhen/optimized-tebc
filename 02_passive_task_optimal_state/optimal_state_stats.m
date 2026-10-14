@@ -1,5 +1,5 @@
 
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\CardioResp_N1P2_allSubjects.mat');
+load('C:\TEBC_project\intermediate_files\CardioResp_N1P2_allSubjects.mat');
 
 
 % Best state for each participant

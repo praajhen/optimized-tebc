@@ -17,7 +17,7 @@ clear; clc; close all;
 %% ========================================================================
 
 folder = ...
-'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\TF_results';
+'C:\TEBC_project\intermediate_files\TF_results';
 
 cd(folder)
 

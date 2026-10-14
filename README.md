@@ -18,8 +18,8 @@ Statistical tests reported in the paper were run in IBM SPSS 30 and JASP; the sc
 
 The scripts were written for one workstation and use absolute Windows paths. Before running:
 
-1. Replace the project root `C:\MyTemp\Personalised TEBC (2024-2025)` with your own folder (find and replace across the repository).
-2. Replace the FieldTrip/EEGLAB paths (`C:\MyTemp\fieldtrip-...`, `C:\MyTemp\eeglab...`) with your installations.
+1. Replace the project root `C:\TEBC_project` with your own folder (find and replace across the repository).
+2. Replace the FieldTrip/EEGLAB paths (`C:\toolboxes\fieldtrip-...`, `C:\toolboxes\eeglab...`) with your installations.
 3. Add the repository to the MATLAB path so helper functions are found: `addpath(genpath('path/to/this/repo'))`.
 
 Expected project folder layout: `data/auditory`, `data/TEBC` (raw `.edf`), `intermediate_files/` (outputs of each step), `CR/`, `figures/`.

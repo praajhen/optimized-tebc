@@ -3,8 +3,8 @@
 
 clear; clc; close all
 
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\cr_table_young.mat')
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\cr_table_older.mat')
+load('C:\TEBC_project\CR\cr_table_young.mat')
+load('C:\TEBC_project\CR\cr_table_older.mat')
 
 %% ================= PARAMETERS =================
 threshold = 30;      % % bad trials cutoff (Step 2)
@@ -359,5 +359,5 @@ fprintf('Total kept : %d\n', sum(keepY)+sum(keepO));
 Young = table2array(CR_table_young);
 Older = table2array(CR_table_older);
 
-% save('C:\MyTemp\Personalised TEBC (2024-2025)\CR\CR_tables_strict.mat', ...
+% save('C:\TEBC_project\CR\CR_tables_strict.mat', ...
 %     'Young','Older','keepY','keepO');

@@ -1,14 +1,14 @@
 %% --------------------------------------N1------------------------------------------%%
 clear; clc
 
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code')
-addpath('C:\MyTemp\fieldtrip-20230427');
+addpath('C:\TEBC_project\matlab_code')
+addpath('C:\toolboxes\fieldtrip-20230427');
 ft_defaults;
 
-trials_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials';  % Folder containing your datasets
+trials_folder = 'C:\TEBC_project\intermediate_files\trials';  % Folder containing your datasets
 trials_files = dir(fullfile(trials_folder, 'PL*.mat'));
 
-data_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\data\auditory\';  % Folder containing your datasets
+data_folder = 'C:\TEBC_project\data\auditory\';  % Folder containing your datasets
 dataset_files = dir(fullfile(data_folder, 'PL*.edf'));  % List all .edf files in the folder
 
 
@@ -103,13 +103,13 @@ dataset_filename = fullfile(data_folder, dataset_files(file_idx).name)
     bins = [bins; binMatrices];
 
   
-bins_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\ecg';  % Folder to save ERP results
+bins_folder = 'C:\TEBC_project\intermediate_files\trials\ecg';  % Folder to save ERP results
 [~, base_filename, ~] = fileparts(dataset_files(file_idx).name);
 bin_filename = fullfile(bins_folder, [base_filename '.mat'])
 save(bin_filename, 'binMatrices');
 
 %     %%
-%     load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\label.mat')
+%     load('C:\TEBC_project\intermediate_files\label.mat')
 % 
 %     bin1.trial = bins{file_idx, 1};
 %     bin1.fsample = 1000;
@@ -123,7 +123,7 @@ save(bin_filename, 'binMatrices');
 %     cfg= [];
 %     ga_erp_1=ft_timelockanalysis(cfg,bin1);
 % 
-%      trials_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ERP_bins\ecg\bin1';  % Folder to save ERP results
+%      trials_folder = 'C:\TEBC_project\intermediate_files\ERP_bins\ecg\bin1';  % Folder to save ERP results
 %      [~, base_filename, ~] = fileparts(dataset_files(file_idx).name);
 %      erp_filename = fullfile(trials_folder, [base_filename '.mat']);
 %      save(erp_filename, 'ga_erp_1');
@@ -141,7 +141,7 @@ save(bin_filename, 'binMatrices');
 %     cfg= [];
 %     ga_erp_2=ft_timelockanalysis(cfg,bin2);
 % 
-%     trials_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ERP_bins\ecg\bin2';  % Folder to save ERP results
+%     trials_folder = 'C:\TEBC_project\intermediate_files\ERP_bins\ecg\bin2';  % Folder to save ERP results
 %      [~, base_filename, ~] = fileparts(dataset_files(file_idx).name);
 %      erp_filename = fullfile(trials_folder, [base_filename '.mat']);
 %      save(erp_filename, 'ga_erp_2');

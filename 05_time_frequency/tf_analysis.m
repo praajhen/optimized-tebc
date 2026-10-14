@@ -6,20 +6,20 @@ clear; clc; close all;
 % FIELDTRIP
 %% ========================================================================
 
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code');
+addpath('C:\TEBC_project\matlab_code');
 
 %% ========================================================================
 % PATHS
 %% ========================================================================
 
 data_folder = ...
-'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ICA_cleaned\TEBC';
+'C:\TEBC_project\intermediate_files\ICA_cleaned\TEBC';
 
 save_folder = ...
-'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\TF_results';
+'C:\TEBC_project\intermediate_files\TF_results';
 
 if ~exist(save_folder,'dir')
     mkdir(save_folder);

@@ -1,12 +1,12 @@
 %% ================= INITIALIZATION =================
 clear; clc; close all;
 
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code')
-addpath('C:\MyTemp\fieldtrip-20230427');
+addpath('C:\TEBC_project\matlab_code')
+addpath('C:\toolboxes\fieldtrip-20230427');
 ft_defaults;
 
-data_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\data\TEBC';
-outdir = 'C:\MyTemp\Personalised TEBC (2024-2025)\CR';
+data_folder = 'C:\TEBC_project\data\TEBC';
+outdir = 'C:\TEBC_project\CR';
 if ~exist(outdir,'dir'), mkdir(outdir); end
 
 dataset_files = dir(fullfile(data_folder, 'PL*.edf'));

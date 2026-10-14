@@ -1,13 +1,13 @@
 %% ================= Cardio–Resp Phase ERP (4 conditions, single figure) ================= %%
 clear; clc; close all;
 
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code');
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\TEBC_project\matlab_code');
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
 %% ---------------------- Paths ---------------------- %%
-resp_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\resp';
-ecg_folder  = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials\ecg';
+resp_folder = 'C:\TEBC_project\intermediate_files\trials\resp';
+ecg_folder  = 'C:\TEBC_project\intermediate_files\trials\ecg';
 
 resp_files = dir(fullfile(resp_folder, 'PL*.mat'));
 ecg_files  = dir(fullfile(ecg_folder,  'PL*.mat'));
@@ -83,7 +83,7 @@ fprintf('Trials: INS–SYS=%d | INS–DIA=%d | EXP–SYS=%d | EXP–DIA=%d\n', .
     length(ins_sys), length(ins_dia), length(exp_sys), length(exp_dia));
 
 %% ---------------------- ERP computation ---------------------- %%
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\label.mat');
+load('C:\TEBC_project\intermediate_files\label.mat');
 
 fs = 1000;
 time_vector = linspace(-0.2, 1, 1200);

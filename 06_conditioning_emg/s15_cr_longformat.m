@@ -5,7 +5,7 @@
 %% ============================================================
 
 %% ---------------- SUBJECT GROUP ASSIGNMENT ----------------
-cd ('C:\MyTemp\Personalised TEBC (2024-2025)\CR');
+cd ('C:\TEBC_project\CR');
 
 % ------------------ YOUNG ------------------
 young_personalised_ids = [ ...

@@ -7,10 +7,10 @@
 
 clear; clc; close all;
 
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
-file = 'C:\MyTemp\Personalised TEBC (2024-2025)\data\auditory\PL41_A.edf';
+file = 'C:\TEBC_project\data\auditory\PL41_A.edf';
 
 fs = 1000;   % Hz
 

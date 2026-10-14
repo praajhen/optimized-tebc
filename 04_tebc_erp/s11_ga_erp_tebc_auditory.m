@@ -1,11 +1,11 @@
 clear; clc;
 
 %% ===================== SETUP FIELDTRIP =====================
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
 %% ===================== DATA FOLDER =========================
-data_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ERP';
+data_folder = 'C:\TEBC_project\intermediate_files\ERP';
 cd(data_folder);
 
 %% ===================== GROUP DEFINITIONS ===================

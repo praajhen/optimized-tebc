@@ -1,6 +1,6 @@
 clear; clc; close all;
 
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\CardioResp_N1P2_allSubjects.mat')
+load('C:\TEBC_project\intermediate_files\CardioResp_N1P2_allSubjects.mat')
 
 figure('Color','w','Position',[100 100 1080 520]);
 

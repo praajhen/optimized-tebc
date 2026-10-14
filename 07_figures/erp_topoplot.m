@@ -1,13 +1,13 @@
 clear; clc
 
 %% ===================== FIELDTRIP =====================
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
-cd('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ERP');
+cd('C:\TEBC_project\intermediate_files\ERP');
 
 %% ===================== EEGLAB ========================
-addpath('C:\MyTemp\eeglab2025.1.0')
+addpath('C:\toolboxes\eeglab2025.1.0')
 eeglab; close
 
 chanlocs = readlocs('GSN-HydroCel-128.sfp');
@@ -146,7 +146,7 @@ topo_op_P2 = squeeze(mean(mean(ga_op.individual(:,:,idx_oP2_win),3),1));
 
 %% ===================== SAVE INDIVIDUAL TOPOPLOTS =====================
 
-output_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\figures\topoplots\';
+output_folder = 'C:\TEBC_project\figures\topoplots\';
 
 zlim = [-7 7];
 

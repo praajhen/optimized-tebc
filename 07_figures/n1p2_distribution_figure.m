@@ -6,7 +6,7 @@ close all
 % Load data
 %% ==========================================================
 
-load('C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\CardioResp_N1P2_allSubjects.mat')
+load('C:\TEBC_project\intermediate_files\CardioResp_N1P2_allSubjects.mat')
 
 %% ==========================================================
 % Create participant-level average across ALL passive-task trials

@@ -4,7 +4,7 @@
 % ============================================================
 
 clear; clc;
-load('C:\MyTemp\Personalised TEBC (2024-2025)\CR\CR.mat') %check only learners
+load('C:\TEBC_project\CR\CR.mat') %check only learners
 %% ================= STYLE SETTINGS (EDIT HERE ONLY) =================
 
 FONT_NAME   = 'Arial';

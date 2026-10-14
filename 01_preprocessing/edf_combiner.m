@@ -1,8 +1,8 @@
-addpath('C:\MyTemp\fieldtrip-20251218');
+addpath('C:\toolboxes\fieldtrip-20251218');
 ft_defaults;
 
-file1 = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ICA_cleaned\TEBC\PL38_TEBC1.set';
-file2 = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ICA_cleaned\TEBC\PL38_TEBC2.set';
+file1 = 'C:\TEBC_project\intermediate_files\ICA_cleaned\TEBC\PL38_TEBC1.set';
+file2 = 'C:\TEBC_project\intermediate_files\ICA_cleaned\TEBC\PL38_TEBC2.set';
 
 hdr1 = ft_read_header(file1);
 dat1 = ft_read_data(file1);

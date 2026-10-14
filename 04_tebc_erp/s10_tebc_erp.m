@@ -1,10 +1,10 @@
 clear; clc;
 
-addpath('C:\MyTemp\Personalised TEBC (2024-2025)\matlab_code')
-addpath('C:\MyTemp\fieldtrip-20230427');
+addpath('C:\TEBC_project\matlab_code')
+addpath('C:\toolboxes\fieldtrip-20230427');
 ft_defaults;
 
-data_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ICA_cleaned\TEBC';  % Folder containing your datasets
+data_folder = 'C:\TEBC_project\intermediate_files\ICA_cleaned\TEBC';  % Folder containing your datasets
 dataset_files = dir(fullfile(data_folder, 'PL*.set'));  % List all .edf files in the folder
 %--------------------------------------------------------------------------------------------------
  file_idx = 2%enter the file number
@@ -107,7 +107,7 @@ erp_trials = ft_preprocessing(cfg,erp);
     % 
     %  [tone_start_times] = tone_times(dataset_filename,erp_trials);
     % 
-    %     trials_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\trials';  % Folder to save ERP results
+    %     trials_folder = 'C:\TEBC_project\intermediate_files\trials';  % Folder to save ERP results
     %     [~, base_filename, ~] = fileparts(dataset_files(file_idx).name);
     %     erp_filename = fullfile(trials_folder, [base_filename '.mat']);
     %     save(erp_filename, 'trials','tone_start_times');
@@ -118,7 +118,7 @@ erp_trials = ft_preprocessing(cfg,erp);
 
     % Save ERP results
     
-        erp_folder = 'C:\MyTemp\Personalised TEBC (2024-2025)\intermediate_files\ERP';  % Folder to save ERP results
+        erp_folder = 'C:\TEBC_project\intermediate_files\ERP';  % Folder to save ERP results
         [~, base_filename, ~] = fileparts(dataset_files(file_idx).name);
         eval([base_filename ' = ga_erp;']);
    
