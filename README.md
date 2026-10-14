@@ -4,7 +4,7 @@ MATLAB/FieldTrip code for:
 
 > Santhana Gopalan, P. R., & Nokia, M. S. (2026). Optimized Cardiorespiratory State at Tone Onset Enhances Sensory Responses but Not Associative Learning in Healthy Adults. *European Journal of Neuroscience*. https://doi.org/10.1111/ejn.70722
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23363484.svg)](https://doi.org/10.5281/zenodo.23363484)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23363484-blue)](https://doi.org/10.5281/zenodo.23363484)
 
 ## Overview
 
