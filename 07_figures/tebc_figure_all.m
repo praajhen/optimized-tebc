@@ -204,7 +204,7 @@ legend({sprintf('Control (n=%d)',n_Yc),...
 set(gca,'FontName',FONT_NAME,'FontSize',FONT_SIZE,'LineWidth',AXIS_WIDTH)
 box off
 
-% exportgraphics(gcf,fullfile(savepath,'Young_main_all.png'),'Resolution',300)
+exportgraphics(gcf,fullfile(savepath,'Young_main_all.png'),'Resolution',300)
 
 
 %% ============================================================
@@ -239,4 +239,4 @@ legend({sprintf('Control (n=%d)',n_Oc),...
 set(gca,'FontName',FONT_NAME,'FontSize',FONT_SIZE,'LineWidth',AXIS_WIDTH)
 box off
 
-% exportgraphics(gcf,fullfile(savepath,'Older_main_all.png'),'Resolution',300)
+exportgraphics(gcf,fullfile(savepath,'Older_main_all.png'),'Resolution',300)

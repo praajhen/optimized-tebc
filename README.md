@@ -31,7 +31,7 @@ Most per-participant scripts process one file at a time (`file_idx`), as the ana
 | Folder | Manuscript section | Content |
 |---|---|---|
 | `01_preprocessing` | 2.4.2 | Data browsing and channel interpolation (`s01`), bad-channel detection (`s01a`), ICA and component rejection (`s02`), joining a split recording (`edf_combiner`) |
-| `02_passive_task_optimal_state` | 2.4, 3.2 | Passive-task epoching and amplitude-based trial rejection (`s03`, `tone_times`), respiration phase bins via Hilbert transform (`s04`), cardiac systole/diastole bins (`s05`, `s05a`), four cardiorespiratory bins and composite N1–P2 `[(a − b) + (c − b)] / 2` (`s06`, `s06b`, `plot_assigned_phase_N1P2`), trial counts, chi-square tests and ANOVA on optimal states (`optimal_state_stats`, `stats_passive_phase_distribution`) |
+| `02_passive_task_optimal_state` | 2.4, 3.2 | Passive-task epoching and amplitude-based trial rejection (`s03`, `tone_times`), respiration phase bins via Hilbert transform (`s04`), cardiac systole/diastole bins (`s05`, `s05a`), four cardiorespiratory bins and composite N1–P2 `[(a − b) + (c − b)] / 2` (`s06`, `s06b`, `plot_assigned_phase_N1P2`), trial counts, chi-square tests and ANOVA on optimal states (`optimal_state_stats`, `stats_passive_phase_distribution`), split-half reliability of the optimal state (`split_half_reliability`, run per participant with random halves and manual peak check; `split_half_reliability_stats` for agreement, Cohen's κ and correlations) |
 | `03_heart_resp_rate` | 2.6.1, 3.1 | Heart rate and respiration rate |
 | `04_tebc_erp` | 2.6.2.1, 3.3 | CS-locked ERPs during TEBC (`s10`, trial function `tebcerp`), composite N1–P2 extraction, grand averages, N1/P2 extraction, post-hoc validation of the cardiorespiratory state at CS onset |
 | `05_time_frequency` | 2.6.2.2, 3.3 | Wavelet decomposition (3 cycles, 4–15 Hz), ITC and induced power, 5–10 Hz / 80–300 ms metrics, statistics, regression and figures |
@@ -63,6 +63,8 @@ Files were renamed to valid MATLAB script names. Mapping from the original names
 | `02_passive_task_optimal_state/s06b_cardioresp_bins_n1p2_figure.m` | `6.1.resp+ecg vs. ERP.m` |
 | `02_passive_task_optimal_state/passive_trial_counts.m` | `trial counts.m` |
 | `02_passive_task_optimal_state/optimal_state_stats.m` | `chi-test (n= 60).m` |
+| `02_passive_task_optimal_state/split_half_reliability.m` | `trial_split_test.m` |
+| `02_passive_task_optimal_state/split_half_reliability_stats.m` | `trial_split_test_correlation.m` |
 | `03_heart_resp_rate/s07_resp_rate_heart_rate.m` | `7. resp rate + heart rate.m` |
 | `03_heart_resp_rate/s14_resp_rate_heart_rate_qc.m` | `14.RSAI.m` |
 | `04_tebc_erp/s10_tebc_erp.m` | `10. TEBC erp.m` |
@@ -89,6 +91,7 @@ Files were renamed to valid MATLAB script names. Mapping from the original names
 | `06_conditioning_emg/learning_rate.m` | `learning rate.m` |
 | `07_figures/condition_distribution_figure.m` | `condtion distribution.m` |
 | `07_figures/n1p2_distribution_figure.m` | `n1p2 distribution figure.m` |
+| `07_figures/n1p2_by_state_and_group_figure.m` | `n1p2_distribution_figure.m` (later version) |
 | `07_figures/erp_composite_figure.m` | `erp_compositve figure.m` |
 | `07_figures/resp_ecg_sample_figure.m` | `resp,ecg sample figure.m` |
 | `07_figures/topoplot_gif.m` | `topoplot gif.m` |
